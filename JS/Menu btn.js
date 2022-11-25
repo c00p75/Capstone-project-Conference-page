@@ -9,7 +9,7 @@ menuButton.addEventListener('click', () => {
   document.querySelector('body').classList.toggle('position-fixed');
   document.querySelector('.logo-img').classList.toggle('d-none');
   document.querySelector('.nav-bar .logo').classList.toggle('d-none');
-  menuButton.innerHTML = '<img src="Images/close_mobile_menu.png" alt="menu">'
+  menuButton.innerHTML = '<img src="Images/close_mobile_menu.png" alt="menu">';
   if (!navigation.classList.contains('bg-dark')) {
     menuButton.innerHTML = '<img src="Images/mobile_menu.png" alt="menu">';
   }
@@ -28,13 +28,13 @@ const sets = [sponsors1, sponsors2, sponsors3];
 
 function hideSponsors(set) {
   for (let i = 0; i < set.length; i += 1) {
-    set[i].classList.toggle('d-md-none')
+    set[i].classList.toggle('d-md-none');
   }
 }
 
-function slide () {
-  if (slideIndex < 0) { slideIndex = 2 }
-  if (slideIndex > 2) { slideIndex = 0 }
+function slide() {
+  if (slideIndex < 0) { slideIndex = 2 };
+  if (slideIndex > 2) { slideIndex = 0 };
   hideSponsors(sets[slideIndex]);
 }
 
