@@ -9,9 +9,9 @@ menuButton.addEventListener('click', () => {
   document.querySelector('body').classList.toggle('position-fixed');
   document.querySelector('.logo-img').classList.toggle('d-none');
   document.querySelector('.nav-bar .logo').classList.toggle('d-none');
-  menuButton.innerHTML = '<img src="Images/close_mobile_menu.png" alt="menu">';
+  menuButton.innerHTML = '<img src="/Images/close_mobile_menu.png" alt="menu">';
   if (!navigation.classList.contains('bg-dark')) {
-    menuButton.innerHTML = '<img src="Images/mobile_menu.png" alt="menu">';
+    menuButton.innerHTML = '<img src="/Images/mobile_menu.png" alt="menu">';
   }
   setTimeout(() => {
     menuButton.classList.remove('diasablePointer');
@@ -33,8 +33,8 @@ function hideSponsors(set) {
 }
 
 function slide() {
-  if (slideIndex < 0) { slideIndex = 2 };
-  if (slideIndex > 2) { slideIndex = 0 };
+  if (slideIndex < 0) { slideIndex = 2; }
+  if (slideIndex > 2) { slideIndex = 0; }
   hideSponsors(sets[slideIndex]);
 }
 

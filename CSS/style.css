@@ -232,6 +232,7 @@ footer img {
     color: black;
   }
 
+  .about-txt,
   .mobile-menu * :hover {
     color: rgb(247, 12, 12);
   }
