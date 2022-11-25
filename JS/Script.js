@@ -1,11 +1,11 @@
-//Dynamically generate speakers
+// Dynamically generate speakers
 const speakers = [
   {
     name: 'Barack Obama',
     link: 'https://en.wikipedia.org/wiki/Barack_Obama',
     image: 'Images/speaker_01.png',
     title: 'American Politician in the Democratic Party',
-    description:'An American politician who served as the 44th president of the United States from 2009 to 2017.',
+    description: 'An American politician who served as the 44th president of the United States from 2009 to 2017.',
   },
 
   {
@@ -13,7 +13,7 @@ const speakers = [
     link: 'https://en.wikipedia.org/wiki/Mizinga_Melu',
     image: 'Images/speaker_07.png',
     title: 'Zambian businesswoman, accountant, and bank executive',
-    description:'industry expert who has been at the helm of top banking organizations having worked in six (6) African countries.',
+    description: 'industry expert who has been at the helm of top banking organizations having worked in six (6) African countries.',
   },
 
   {
@@ -21,7 +21,7 @@ const speakers = [
     link: 'https://en.wikipedia.org/wiki/Larry_Page',
     image: 'Images/speaker_02.png',
     title: 'Co-founder of Google',
-    description:'American business magnate, computer scientist and internet entrepreneur.',
+    description: 'American business magnate, computer scientist and internet entrepreneur.',
   },
 
   {
@@ -29,7 +29,7 @@ const speakers = [
     link: 'https://en.wikipedia.org/wiki/Oprah_Winfrey',
     image: 'Images/speaker_04.png',
     title: 'American television personality',
-    description:'American talk show host, television producer, actress, author, and philanthropist.',
+    description: 'American talk show host, television producer, actress, author, and philanthropist.',
   },
 
   {
@@ -37,7 +37,7 @@ const speakers = [
     link: '#',
     image: 'Images/speaker_05.png',
     title: 'Investor and CEO',
-    description:'Zambian billionaire and founder of 12 of the top 40 most profitable businesses in Africa',
+    description: 'Zambian billionaire and founder of 12 of the top 40 most profitable businesses in Africa',
   },
 
   {
@@ -45,7 +45,7 @@ const speakers = [
     link: 'https://www.joerogan.com/',
     image: 'Images/speaker_09.png',
     title: 'American UFC color commentator, podcaster, and more',
-    description:'Hosts The Joe Rogan Experience, a podcast in which he discusses current events, politics, philosophy, and science',
+    description: 'Hosts The Joe Rogan Experience, a podcast in which he discusses current events, politics, philosophy, and science',
   },
 
   {
@@ -53,15 +53,15 @@ const speakers = [
     link: '#',
     image: 'Images/speaker_03.png',
     title: 'Most recognized real estate lawyer in Zambia',
-    description:'Focuses on the restructuring and liquidation of companies in a wide array of industries.',
+    description: 'Focuses on the restructuring and liquidation of companies in a wide array of industries.',
   },
 
   {
     name: 'Margaret Phiri',
     link: '#',
-    image:'Images/speaker_10.png',
+    image: 'Images/speaker_10.png',
     title: 'Entrepreneur, educator, and business woman',
-    description:"Multi-industry business owner and major share holder of the world's most popular beauty brand",
+    description: "Multi-industry business owner and major share holder of the world's most popular beauty brand",
   },
 
   {
@@ -69,7 +69,7 @@ const speakers = [
     link: '#',
     image: 'Images/speaker_06.png',
     title: 'Founder of one the leading law firms in Zambia',
-    description:'Renowned for work across disciplines, including both transactional and disputes work',
+    description: 'Renowned for work across disciplines, including both transactional and disputes work',
   },
 
   {
@@ -77,7 +77,7 @@ const speakers = [
     link: 'https://en.wikipedia.org/wiki/Mia_Mottley',
     image: 'Images/speaker_08.png',
     title: 'Barbadian politician and attorney',
-    description:'Barbadian politician and attorney who has served as prime minister of Barbados since 2018',
+    description: 'Barbadian politician and attorney who has served as prime minister of Barbados since 2018',
   },
 ];
 
@@ -89,7 +89,7 @@ function addSpeaker(speaker, display = false) {
   speakerHTML.classList.add('py-4');
   speakerHTML.classList.add('w3-animate-top');
 
-  if (display===false) { speakerHTML.classList.add('d-none'); }
+  if (display === false) { speakerHTML.classList.add('d-none'); }
   speakerHTML.innerHTML = `  
     <div class="col-6">
       <img src="${speaker.image}" alt="${speaker.name}" class="img-fluid">
@@ -107,7 +107,7 @@ function addSpeaker(speaker, display = false) {
   document.querySelector('#speaker-container').appendChild(speakerHTML);
 }
 
-for (let i = 0; i < speakers.length; i++) {
+for (let i = 0; i < speakers.length; i += 1) {
   if (i < 4) {
     addSpeaker(speakers[i], true);
   } else {
@@ -122,7 +122,7 @@ const hiddenSpeakers = document.querySelectorAll('.speakers .d-none');
 
 function toggleHide(index, Nodelist) {
   seeMore[index].classList.toggle('d-none');
-  for (let i = 0; i < Nodelist.length; i++) {
+  for (let i = 0; i < Nodelist.length; i += 1) {
     Nodelist[i].classList.toggle('d-none');
   }
 }

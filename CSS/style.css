@@ -10,12 +10,25 @@ section * {
   font-family: 'Lato', sans-serif;
 }
 
-.lato {
-  font-family: 'Lato', sans-serif;
-}
-
 header {
   background-color: white;
+}
+
+footer {
+  font-size: 0.9em;
+}
+
+footer p {
+  align-self: center;
+}
+
+footer img {
+  width: 70px;
+  height: 100%;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
 }
 
 .nav-bar .menu-btn {
@@ -190,19 +203,6 @@ header {
   margin: 10px 0;
 }
 
-footer {
-  font-size: 0.9em;
-}
-
-footer p {
-  align-self: center;
-}
-
-footer img {
-  width: 70px;
-  height: 100%;
-}
-
 #about-section-container {
   width: 100%;
   background-image: url(../Images/about_bg.png) !important;
@@ -218,7 +218,7 @@ footer img {
     z-index: 1;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 30%);
   }
-  
+
   nav {
     padding: 0 !important;
     width: 100vw !important;
