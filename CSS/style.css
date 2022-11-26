@@ -55,7 +55,7 @@ footer img {
   height: 100vh;
   gap: 5%;
   padding: 10%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .diasablePointer {
@@ -209,6 +209,10 @@ footer img {
   background-position-y: 70px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.past-events {
+  margin: 0 11px;
 }
 
 @media only screen and (min-width: 768px) {
