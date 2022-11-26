@@ -89,7 +89,10 @@ function addSpeaker(speaker, display = false) {
   speakerHTML.classList.add('py-4');
   speakerHTML.classList.add('w3-animate-top');
 
-  if (display === false) { speakerHTML.classList.add('d-none'); }
+  if (display === false) {
+    speakerHTML.classList.add('d-none');
+    speakerHTML.classList.add('d-md-flex');
+  }
   speakerHTML.innerHTML = `  
     <div class="col-6">
       <img src="${speaker.image}" alt="${speaker.name}" class="img-fluid">
