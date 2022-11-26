@@ -217,6 +217,14 @@ footer img {
   margin: 0 11px;
 }
 
+.home-footer {
+  background-color: black;
+}
+
+.home-footer p {
+  color: white !important;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     position: fixed !important;
@@ -388,5 +396,21 @@ footer img {
 
   .socials a:hover {
     transform: scale(1.1);
+  }
+
+  .about-footer {
+    background-color: black;
+  }
+
+  .about-footer p {
+    color: white;
+  }
+
+  .home-footer {
+    background-color: white;
+  }
+  
+  .home-footer p {
+    color: black !important;
   }
 }
