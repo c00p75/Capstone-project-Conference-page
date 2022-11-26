@@ -230,6 +230,10 @@ footer img {
     width: 100vw !important;
   }
 
+  footer img {
+    width: 120px;
+  }
+
   .mobile-menu {
     background-color: white !important;
   }
@@ -378,15 +382,11 @@ footer img {
     width: 100px !important;
   }
 
- .socials {
-  padding: 0 5%;
- }
+  .socials {
+    padding: 0 5%;
+  }
 
   .socials a:hover {
     transform: scale(1.1);
-  }
-
-  footer img {
-    width: 120px;
   }
 }
