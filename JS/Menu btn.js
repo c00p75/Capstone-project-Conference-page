@@ -1,21 +1,17 @@
 // Menu btn functionality
 const menuButton = document.querySelector('.menu-btn');
 const navigation = document.querySelector('nav');
+const hamburger = document.querySelector('#hamburger-menu');
+const closeMenu = document.querySelector('#close-menu');
 menuButton.addEventListener('click', () => {
-  menuButton.classList.add('diasablePointer');
   navigation.classList.toggle('bg-dark');
   navigation.classList.toggle('mobile-menu-bg');
   navigation.classList.toggle('position-fixed');
+  hamburger.classList.toggle('d-none');
+  closeMenu.classList.toggle('d-none');
   document.querySelector('body').classList.toggle('position-fixed');
   document.querySelector('.logo-img').classList.toggle('d-none');
   document.querySelector('.nav-bar .logo').classList.toggle('d-none');
-  menuButton.innerHTML = '<img src="/Images/close_mobile_menu.png" alt="menu">';
-  if (!navigation.classList.contains('bg-dark')) {
-    menuButton.innerHTML = '<img src="/Images/mobile_menu.png" alt="menu">';
-  }
-  setTimeout(() => {
-    menuButton.classList.remove('diasablePointer');
-  }, 500);
 });
 
 // Sponsors slide

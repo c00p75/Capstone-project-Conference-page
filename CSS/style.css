@@ -69,7 +69,7 @@ footer img {
 
 .container-1 h1 {
   font-family: 'COCOGOOSE', sans-serif;
-  font-size: 2.4em;
+  font-size: 2.5em;
   word-wrap: break-word;
 }
 
@@ -91,7 +91,7 @@ footer img {
 
 .summary {
   border: 4px solid rgb(255, 255, 255);
-  margin: 17px 0.75em 0;
+  margin: auto;
   padding: 1em 0.5em;
   font-size: 13px;
   width: 70%;
@@ -214,7 +214,7 @@ footer img {
 }
 
 .past-events {
-  margin: 0 11px;
+  margin: auto;
 }
 
 .home-footer {
@@ -223,6 +223,10 @@ footer img {
 
 .home-footer p {
   color: white !important;
+}
+
+.hide {
+  display: none !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -289,6 +293,10 @@ footer img {
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-tap-highlight-color: transparent;
+  }
+
+  .summary {
+    margin: 0;
   }
 
   .section-container {

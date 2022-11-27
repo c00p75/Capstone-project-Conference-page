@@ -68,8 +68,8 @@ const speakers = [
     name: "Chizaso M'sapenda",
     link: '#',
     image: 'Images/speaker_06.png',
-    title: 'Founder of one the leading law firms in Zambia',
-    description: 'Renowned for work across disciplines, including both transactional and disputes work',
+    title: 'Founder of the leading law firm in Zambia',
+    description: 'The founder, senior lawyer, and leading associate at the Msapenda Legal Practitioners. An entrepreneur and chief legal advisor for Penda Holdings Ltd.',
   },
 
   {
