@@ -9,6 +9,7 @@ menuButton.addEventListener('click', () => {
   navigation.classList.toggle('position-fixed');
   hamburger.classList.toggle('d-none');
   closeMenu.classList.toggle('d-none');
+  hamburger.classList.add('w3-animate-bottom');
   document.querySelector('body').classList.toggle('position-fixed');
   document.querySelector('.logo-img').classList.toggle('d-none');
   document.querySelector('.nav-bar .logo').classList.toggle('d-none');
