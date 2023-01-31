@@ -93,18 +93,17 @@ function addSpeaker(speaker, display = false) {
     speakerHTML.classList.add('d-none');
     speakerHTML.classList.add('d-md-flex');
   }
-  const{image, name, link, title, description} = speaker
   speakerHTML.innerHTML = `  
     <div class="col-6">
-      <img src="${image}" alt="${name}" class="img-fluid">
+      <img src="${speaker.image}" alt="${speaker.name}" class="img-fluid">
     </div>
     
     <div class="col-6  text-start container">
-        <a href="${link}" class="text-decoration-none text-dark fw-bold">${speaker.name}</a>
-        <p class="speaker-description mb-2 fst-italic">${title}</p>
+        <a href="${speaker.link}" class="text-decoration-none text-dark fw-bold">${speaker.name}</a>
+        <p class="speaker-description mb-2 fst-italic">${speaker.title}</p>
         <div class='line2'></div>
         <div class="col-12 speaker-description text-dark text-start">
-          <p>${description}</p>
+          <p>${speaker.description}</p>
         </div>
     </div>
   `;

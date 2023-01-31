@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico');
+/* * { outline: 2px dotted red}; */
 
 * {
   margin: 0;
@@ -77,7 +77,6 @@ footer img {
   background-image: url(../Images/title2-bg.jpg);
   background-size: 20%;
   background-repeat: repeat;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -179,7 +178,7 @@ footer img {
   background-repeat: no-repeat;
   padding: 0;
   height: 50vw;
-  width: 100%;
+  width: 400px;
 }
 
 .conference-bg {
