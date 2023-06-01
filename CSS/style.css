@@ -237,7 +237,8 @@ footer img {
 
 @media only screen and (min-width: 768px) {
   header {
-    position: fixed !important;
+    position: sticky;
+    top: 0;
     width: 100vw;
     z-index: 1;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 30%);
@@ -391,11 +392,6 @@ footer img {
     gap: 1 !important;
   }
 
-  .program a:hover {
-    text-decoration: none;
-    color: #ff4f38 !important;
-  }
-
   nav ul li {
     padding: 0 3%;
   }
@@ -408,8 +404,17 @@ footer img {
     padding: 0 5%;
   }
 
+  .socials a {
+    color: white;
+  }
+
   .socials a:hover {
     transform: scale(1.1);
+  }
+
+  .program a:hover {
+    text-decoration: none;
+    color: #ff4f38 !important;
   }
 
   .about-footer {
