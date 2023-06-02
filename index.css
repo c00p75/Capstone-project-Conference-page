@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=Lato:wght@400;900&display=swap');
+
 :root {
   --primary-color: #ffffff;
   --secondary-color: #ff4f38;
@@ -70,18 +72,14 @@ footer img {
   padding-top: 7em;
 }
 
-.container-1 h1 {
-  font-family: 'COCOGOOSE', sans-serif;
-  font-size: 2.5em;
-  word-wrap: break-word;
-}
-
 .h1-effect {
   background-image: url(../Images/title2-bg.jpg);
   background-size: 20%;
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+  word-wrap: break-word;
 }
 
 .grey-bg {
@@ -295,36 +293,6 @@ footer img {
     margin: 0;
   }
 
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 20%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  .next {
-    right: 15px;
-  }
-
-  .prev {
-    left: 15px;
-  }
-
-  .prev:hover,
-  .next:hover {
-    color: var(--primary-color);
-    transform: scale(1.5);
-  }
-
   .sponsors img {
     max-width: 9vw !important;
     margin: auto;
@@ -332,8 +300,8 @@ footer img {
   }
 
   .all-sponsors {
-    padding: 0 25% 5%;
-    overflow: hidden !important;
+    padding: 0 15% !important;
+    height: auto !important;
   }
 
   .logo-display {
@@ -341,7 +309,19 @@ footer img {
   }
 
   .cards {
+    padding: 0 0.5em;
     margin: 0.1em;
+    cursor: pointer;
+  }
+
+  .cards > * {
+    margin: 1em 0;
+  }
+
+  .cards:hover {
+    box-shadow: 0 0 0 2px var(--primary-color);
+  -webkit-box-shadow: 0 0 0 2px var(--primary-color);
+  -moz-box-shadow: 0 0 0 2px var(--primary-color);
   }
 
   .conference-container {
@@ -390,7 +370,7 @@ footer img {
   }
 
   .program {
-    padding: 15% !important;
+    padding: 5% 15% !important;
   }
 
   .program a:hover {
