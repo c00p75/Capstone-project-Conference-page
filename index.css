@@ -62,8 +62,12 @@ footer img {
   z-index: 2;
 }
 
+.nav-link {
+  color: white !important;
+}
+
 .diasablePointer {
-  pointer-events: none;
+  pointer-events: none !important;
 }
 
 .container-1 {
