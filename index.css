@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=Lato:wght@400;900&display=swap');
 
 :root {
-  --primary-color: #ffffff;
+  --primary-color: white;
   --secondary-color: #ff4f38;
 }
 
@@ -20,6 +20,11 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+h1 {
+  font-size: 2.5em !important;
+  word-wrap: break-word;
 }
 
 header {
@@ -73,7 +78,7 @@ footer img {
 .container-1 {
   background-image: url(../Images/mobile_intro_bg.png);
   background-position: top center;
-  padding-top: 7em;
+  padding-top: 2em;
 }
 
 .h1-effect {
@@ -82,8 +87,6 @@ footer img {
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.5em;
-  word-wrap: break-word;
 }
 
 .grey-bg {
@@ -140,7 +143,8 @@ footer img {
 }
 
 .cards {
-  margin: 0.8em;
+  padding: 1em 0.5em;
+  margin: auto;
   background: rgba(255, 255, 255, 0.1);
   min-height: 13vh;
 }
@@ -150,7 +154,7 @@ footer img {
 }
 
 .cards > * {
-  margin: auto;
+  margin: auto !important;
 }
 
 .speakers .card img {
@@ -203,7 +207,7 @@ footer img {
 
 .sponsors .all-sponsors img {
   max-width: 26vw;
-  height: 10vh;
+  height: 7vh;
   margin: 10px 0;
 }
 
@@ -286,6 +290,7 @@ footer img {
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-tap-highlight-color: transparent;
+    padding-top: 7em;
   }
 
   .summary {
@@ -308,13 +313,12 @@ footer img {
   }
 
   .cards {
-    padding: 0 0.5em;
     margin: 0.1em;
     cursor: pointer;
   }
 
   .cards > * {
-    margin: 1em 0;
+    margin: 0.5em 0 !important;
   }
 
   .cards:hover {
