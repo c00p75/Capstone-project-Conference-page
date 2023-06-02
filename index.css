@@ -181,7 +181,6 @@ footer img {
 .conference-container {
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0;
   height: 50vw;
   width: 100%;
 }
@@ -214,10 +213,6 @@ footer img {
   background-position-y: 70px;
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.past-events {
-  margin: auto;
 }
 
 .home-footer {
@@ -272,7 +267,7 @@ footer img {
   }
 
   .nav-link {
-    color: black;
+    color: black !important;
   }
 
   .nav-link:hover {
@@ -324,13 +319,14 @@ footer img {
 
   .cards:hover {
     box-shadow: 0 0 0 2px var(--primary-color);
-  -webkit-box-shadow: 0 0 0 2px var(--primary-color);
-  -moz-box-shadow: 0 0 0 2px var(--primary-color);
+    -webkit-box-shadow: 0 0 0 2px var(--primary-color);
+    -moz-box-shadow: 0 0 0 2px var(--primary-color);
   }
 
   .conference-container {
-    height: 300px;
-    width: 400px;
+    height: 17em;
+    width: 100%;
+    cursor: pointer;
   }
 
   #speaker-container {
@@ -352,8 +348,8 @@ footer img {
   }
 
   .showcase {
-    padding: 3% 18% !important;
-    gap: 1 !important;
+    margin: 3% 10% !important;
+    gap: 1;
   }
 
   nav ul li .red-border {
