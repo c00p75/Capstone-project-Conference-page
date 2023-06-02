@@ -1,17 +1,36 @@
-/* * { outline: 2px dotted red}; */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&family=Lato:wght@400;900&display=swap');
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --primary-color: white;
+  --secondary-color: #ff4f38;
 }
 
-section * {
+* {
+  /* outline: 1px solid red; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
   font-family: 'Lato', sans-serif;
 }
 
+a,
+button {
+  text-decoration: none !important;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2.5em !important;
+  word-wrap: break-word;
+}
+
 header {
-  background-color: white;
+  background-color: var(--primary-color);
 }
 
 footer {
@@ -25,14 +44,6 @@ footer p {
 footer img {
   width: 70px;
   height: 100%;
-}
-
-.lato {
-  font-family: 'Lato', sans-serif;
-}
-
-.nav-bar .menu-btn {
-  border: 0;
 }
 
 .nav-bar .menu-btn img {
@@ -51,26 +62,25 @@ footer img {
   width: 30px;
 }
 
-.nav-bar .mobile-menu {
+.nav-bar #mobile-menu {
   height: 100vh;
   gap: 5%;
   padding: 10%;
   z-index: 2;
 }
 
+.nav-link {
+  color: white !important;
+}
+
 .diasablePointer {
-  pointer-events: none;
+  pointer-events: none !important;
 }
 
 .container-1 {
   background-image: url(../Images/mobile_intro_bg.png);
   background-position: top center;
-}
-
-.container-1 h1 {
-  font-family: 'COCOGOOSE', sans-serif;
-  font-size: 2.5em;
-  word-wrap: break-word;
+  padding-top: 2em;
 }
 
 .h1-effect {
@@ -86,7 +96,7 @@ footer img {
 }
 
 .quote {
-  color: #ff4f38 !important;
+  color: var(--secondary-color) !important;
 }
 
 .summary {
@@ -98,7 +108,7 @@ footer img {
 }
 
 .about-summary {
-  background-color: white;
+  background-color: var(--primary-color);
   border: 2px solid rgb(177, 177, 177);
 }
 
@@ -135,7 +145,8 @@ footer img {
 }
 
 .cards {
-  margin: 0.8em;
+  padding: 1em 0.5em;
+  margin: auto;
   background: rgba(255, 255, 255, 0.1);
   min-height: 13vh;
 }
@@ -145,7 +156,7 @@ footer img {
 }
 
 .cards > * {
-  margin: auto;
+  margin: auto !important;
 }
 
 .speakers .card img {
@@ -154,7 +165,7 @@ footer img {
 
 .speaker-description {
   font-size: 0.75em;
-  color: #ff4f38;
+  color: var(--secondary-color);
 }
 
 .more-btn {
@@ -176,7 +187,6 @@ footer img {
 .conference-container {
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0;
   height: 50vw;
   width: 100%;
 }
@@ -199,7 +209,7 @@ footer img {
 
 .sponsors .all-sponsors img {
   max-width: 26vw;
-  height: 10vh;
+  height: 7vh;
   margin: 10px 0;
 }
 
@@ -211,16 +221,12 @@ footer img {
   background-repeat: no-repeat;
 }
 
-.past-events {
-  margin: auto;
-}
-
 .home-footer {
   background-color: black;
 }
 
 .home-footer p {
-  color: white !important;
+  color: var(--primary-color) !important;
 }
 
 .hide {
@@ -229,45 +235,35 @@ footer img {
 
 @media only screen and (min-width: 768px) {
   header {
-    position: fixed !important;
-    width: 100vw;
+    position: sticky;
+    top: 0;
     z-index: 1;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 30%);
   }
 
   nav {
-    padding: 0 !important;
-    width: 100vw !important;
+    padding: 15% !important;
+  }
+
+  section {
+    padding: 0 15%;
   }
 
   footer img {
     width: 120px;
   }
 
-  .mobile-menu {
-    background-color: white !important;
-  }
-
-  .mobile-menu * {
-    color: black;
+  #collapsibleNavId {
+    gap: 3vw;
   }
 
   .about-txt,
-  .mobile-menu * :hover {
+  #mobile-menu * :hover {
     color: rgb(247, 12, 12);
   }
 
-  .nav-bar {
-    padding: 0 15%;
-  }
-
-  .nav-bar .mobile-menu {
-    position: relative;
-    height: auto;
-    padding: 0 !important;
-    margin: 0 !important;
-    gap: 0;
-    width: fit-content !important;
+  .nav-bar #mobile-menu {
+    display: contents;
   }
 
   .nav-bar .logo {
@@ -276,13 +272,18 @@ footer img {
     order: 0;
   }
 
-  #collapsibleNavId {
-    flex-grow: 0;
+  .nav-link {
+    color: black !important;
+  }
+
+  .nav-link:hover {
+    color: var(--secondary-color) !important;
   }
 
   .red-border {
-    border: 3px solid #ff4f38;
+    border: 5px solid #ff4f38;
     font-size: 0.7em !important;
+    padding: 1em !important;
   }
 
   .container-1 {
@@ -291,49 +292,11 @@ footer img {
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-tap-highlight-color: transparent;
+    padding-top: 7em;
   }
 
   .summary {
     margin: 0;
-  }
-
-  .section-container {
-    padding-left: 15%;
-    padding-right: 20%;
-  }
-
-  .container-2 {
-    padding-top: 120px !important;
-  }
-
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 20%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  .next {
-    right: 15px;
-  }
-
-  .prev {
-    left: 15px;
-  }
-
-  .prev:hover,
-  .next:hover {
-    color: white;
-    transform: scale(1.5);
   }
 
   .sponsors img {
@@ -343,8 +306,8 @@ footer img {
   }
 
   .all-sponsors {
-    padding: 0 25% 5%;
-    overflow: hidden !important;
+    padding: 0 15% !important;
+    height: auto !important;
   }
 
   .logo-display {
@@ -353,11 +316,23 @@ footer img {
 
   .cards {
     margin: 0.1em;
+    cursor: pointer;
+  }
+
+  .cards > * {
+    margin: 0.5em 0 !important;
+  }
+
+  .cards:hover {
+    box-shadow: 0 0 0 2px var(--primary-color);
+    -webkit-box-shadow: 0 0 0 2px var(--primary-color);
+    -moz-box-shadow: 0 0 0 2px var(--primary-color);
   }
 
   .conference-container {
-    height: 300px;
-    width: 400px;
+    height: 17em;
+    width: 100%;
+    cursor: pointer;
   }
 
   #speaker-container {
@@ -379,17 +354,8 @@ footer img {
   }
 
   .showcase {
-    padding: 3% 18% !important;
-    gap: 1 !important;
-  }
-
-  .program a:hover {
-    text-decoration: none;
-    color: #ff4f38 !important;
-  }
-
-  nav ul li {
-    padding: 0 3%;
+    margin: 3% 10% !important;
+    gap: 1;
   }
 
   nav ul li .red-border {
@@ -397,11 +363,24 @@ footer img {
   }
 
   .socials {
-    padding: 0 5%;
+    padding: 0 14% !important;
+  }
+
+  .socials a {
+    color: var(--primary-color);
   }
 
   .socials a:hover {
+    color: var(--primary-color);
     transform: scale(1.1);
+  }
+
+  .program {
+    padding: 5% 15% !important;
+  }
+
+  .program a:hover {
+    color: var(--secondary-color);
   }
 
   .about-footer {
@@ -409,11 +388,11 @@ footer img {
   }
 
   .about-footer p {
-    color: white;
+    color: var(--primary-color);
   }
 
   .home-footer {
-    background-color: white;
+    background-color: var(--primary-color);
   }
 
   .home-footer p {

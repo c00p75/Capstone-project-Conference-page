@@ -1,11 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-
-  <img src="https://github.com/microverseinc/readme-template/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Capstone-project-Conference-page</b></h3>
-
 </div>
 
 
