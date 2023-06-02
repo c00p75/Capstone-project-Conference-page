@@ -242,6 +242,10 @@ footer img {
     padding: 15% !important;
   }
 
+  section {
+    padding: 0 15%;
+  }
+
   footer img {
     width: 120px;
   }
@@ -383,6 +387,10 @@ footer img {
   .socials a:hover {
     color: var(--primary-color);
     transform: scale(1.1);
+  }
+
+  .program {
+    padding: 15% !important;
   }
 
   .program a:hover {
